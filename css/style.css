@@ -178,7 +178,7 @@ body{
 
 
 .burger-icon.toggle span:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-12px, 6px);
 }
 
 .burger-icon.toggle span:nth-child(2) {
@@ -186,7 +186,7 @@ body{
 }
 
 .burger-icon.toggle span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-12px, -6px);
 }
 
 
@@ -723,12 +723,12 @@ section .content{
 }
 
 @media (max-width: 768px) {
-    .header-home,
+    /* .header-home,
     .header-cont,
     .header {
         flex-direction: column;
         padding: 10px;
-    }
+    } */
 
     .navbar a {
         margin-left: 20px;
