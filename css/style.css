@@ -135,6 +135,61 @@ body{
 }
 
 
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  width: 30px;
+  height: 3px;
+  background-color: #ededed;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    background-color: #081b29;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .navbar a {
+    margin: 15px 0;
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
+
+
+.burger-icon.toggle span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-icon.toggle span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.toggle span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 .home {
     display: flex;
     align-items: center;
