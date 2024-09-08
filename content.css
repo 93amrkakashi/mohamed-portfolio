@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #052338; /* Light blue background */
+    color: #004080; /* Dark blue text color */
+    transition: background-color 0.5s ease, color 0.5s ease; /* ترانزيشن لتغيير الخلفية والنص */
+}
+
+/* Header Styles */
+.header {
+    position: relative; 
+    top: 0; 
+    left: 0;
+    padding: 20px 10%;
+    background-color: #052338;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100; /* تأكد من أن الرأس في المقدمة */
+    transition: background-color 0.3s ease; /* ترانزيشن لتغيير لون الخلفية */
+}
+
+.header .logo-about {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none; 
+    position: relative; 
+    font-weight: 600; 
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s ease, background-color 0.3s ease, margin 0.3s ease, padding 0.3s ease; /* الترانزيشن مضاف */
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #081b29;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00abf0;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: white; /* Darker blue for headers */
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-section .span {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #0080ff;
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+/* Image Container */
+.image-container {
+    display: inline-block;
+    margin: 30px;
+    border-radius: 50%; /* Make the images circular */
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: transform 0.5s ease; /* ترانزيشن للتدوير */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container:hover {
+    transform: rotate(360deg); /* Rotate on hover */
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-info div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info i {
+    color: #0080ff; /* Medium blue for icons */
+    margin-right: 10px;
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-info span {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-info a {
+    color: #ffffffaa;
+    text-decoration: none;
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #00abf0; /* تغيير اللون عند التمرير */
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 18px;
+    color: #0080ff;
+    margin: 10px 0 5px;
+    transition: color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #0080ff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #003366;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #00abf0;
+}
+
+.contact-form button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; /* ترانزيشن لتغيير اللون والخلفية */
+}
+
+.contact-form button:hover {
+    color: #003366;
+    background-color: #00abf0;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    transition: background-color 0.3s ease; /* ترانزيشن لتغيير اللون */
+}
