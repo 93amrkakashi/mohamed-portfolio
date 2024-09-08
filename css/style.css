@@ -803,16 +803,19 @@ section .content{
     width: 100%;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
   .btn-box a {
-    width: 100%;
+    width: 50%;
     height: 45px;
     font-size: 16px;
   }
 
   
   .home-sci {
+    position: relative;
     width: 100%;
     bottom: 20px;
     justify-content: center;
@@ -847,6 +850,7 @@ section .content{
   }
 
   .btn-box a {
+    width: 50%;
     height: 40px;
     font-size: 14px;
   }
